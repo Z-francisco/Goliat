@@ -1,0 +1,17 @@
+<style> .Todoalaizquierda { float: right; } form {max-width: 80%; margin: auto auto;}</style>
+<form [formGroup]="formularioDeClientes" (ngSubmit)="EnviarDatos()">
+    <div class="form-group">
+    <label for="nombre" style="font-weight: 200;">Nombre completo</label>
+      <input type="text" formControlName="nombre" class="form-control" id="nombre" placeholder="Ingresa los datos correspondientes"><br>
+    <label for="direccion" style="font-weight: 200;">Direccion</label>
+      <input type="text" formControlName="direccion" class="form-control" id="direccion" placeholder="Ingresa los datos correspondientes"><br>
+    <label for="numero" style="font-weight: 200;">Numero telefonico</label>
+      <input type="text" formControlName="numero" class="form-control" id="numero" placeholder="Ingresa los datos correspondientes"><br>
+    <label for="municipio" style="font-weight: 200;">Municipio</label>
+      <input type="text" formControlName="municipio" class="form-control" id="municipio" placeholder="Ingresa los datos correspondientes"><br>
+    <label for="costoTotal" style="font-weight: 200;">Precio Neto</label>
+      <input type="text" formControlName="costoTotal" class="form-control" id="costoTotal" placeholder="Ingresa los datos correspondientes"><br>
+    </div><br>
+    <a href="./"><button class="Todoalaizquierda btn btn btn-success" type="submit">Confirmar pedido</button></a>
+    <a routerLink="/Pedidos"><button class="btn btn-danger Todoalaizquierda">Cancelar</button> </a>
+</form>

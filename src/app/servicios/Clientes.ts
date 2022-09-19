@@ -1,0 +1,28 @@
+export class Cliente {
+    id!:number;
+    nombre!:any;
+    direccion!:any;
+    numero!:any
+    municipio!:any;
+    costoTotal!:any;
+    numeroaportaciones!:any;
+    clientejob!:any
+    nombreesposo!:any;
+    esposojob!:any;
+    esposonro!:any;
+    nionmb!:any;
+    niogg!:any;
+    escuelanio!:any
+    rf1nmb!:any;
+    rf1direcc!:any;
+    rf1nro!:any;
+    rf1parent!:any
+    rf2nmb!:any;
+    rf2direcc!:any;
+    rf2nro!:any;
+    rf2parent!:any;
+    rf3nmb!:any
+    rf3direcc!:any;
+    rf3nro!:any;
+    rf3parent!:any;
+}

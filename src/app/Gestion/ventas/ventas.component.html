@@ -1,0 +1,74 @@
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+
+
+<div class="col-md-12" id="estadisticasg">
+
+  <a routerLink="/Crear Venta"><button class="btn btn-success">Generar nueva venta</button></a><br><br>
+    <div class="card">
+      <div class="card-header">
+        <h5 class="card-title">Ventas activas</h5>
+
+        <div class="card-tools">
+          <button type="button" class="btn btn-tool" data-card-widget="collapse">
+            <i class="fas fa-minus"></i>
+          </button>
+          <div class="btn-group">
+            <button type="button" class="btn btn-tool dropdown-toggle" data-toggle="dropdown">
+              <i class="fas fa-wrench"></i>
+            </button>
+            <div class="dropdown-menu dropdown-menu-right" role="menu">
+              <a href="#" class="dropdown-item">Boton para funcion especial</a>
+              <a href="#" class="dropdown-item">Boton para funcion especial</a>
+              <a href="#" class="dropdown-item">Boton para funcion especial</a>
+              <a class="dropdown-divider"></a>
+              <a href="#" class="dropdown-item">Boton para funcion especial</a>
+            </div>
+          </div>
+          <button type="button" class="btn btn-tool" data-card-widget="remove">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+      </div>
+      <!-- /.card-header -->
+      <div class="card-body">
+        <div class="row">
+          <div class="col text-center">
+            <table class="table no-centrar">
+              <thead>
+                <tr>
+                  <th scope="col">No. Folio</th>
+                  <th scope="col">Nombre</th>
+                  <th scope="col">Telefono</th>
+                  <th scope="col">Dirección</th>
+                  <th scope="col" class="text-center">Opciones</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let Clientes of Clientes; let iControl=index" id="{{Clientes.id}} {{Clientes.pago1}}">
+                  <th scope="row">{{Clientes.id}}</th>
+                  <td>{{Clientes.nombre}}</td>
+                  <td>{{Clientes.direccion}}</td>
+                  <td>{{Clientes.direccion}}</td>
+                  <td class="text-center">
+                    <a><button (click)="BorrarRegistrodos(Clientes.id, iControl)" class="btn boton-tabla btn-ligth"><img src="../../../assets/trash.svg" alt=""></button></a>
+                      
+                    <a routerLink="/Editar Venta/{{Clientes.id}}"><button class="btn boton-tabla btn-ligth"><img src="../../../assets/pencil.svg" alt=""></button></a>
+
+                    <a routerLink="/Verificar Cuenta/{{Clientes.id}}"><button class="btn boton-tabla btn-ligth"><img src="../../../assets/speedometer2.svg" alt=""></button></a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- /.col -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- ./card-body -->
+
+    </div>
+
+  </div>

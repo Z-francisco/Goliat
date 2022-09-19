@@ -1,0 +1,16 @@
+.no-centrar {
+    text-align: left!important;
+}
+.boton-tabla {
+    padding: 10px!important;
+    margin-left: 10px;
+}
+.izq-1 {
+    margin-left: 50px;
+}
+tr, th, td {
+    vertical-align: middle;
+}
+tr:hover{
+    background-color: rgb(129, 192, 129);
+}

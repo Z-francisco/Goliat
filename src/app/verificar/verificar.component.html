@@ -1,0 +1,56 @@
+<style> .Todoalaizquierda { float: right; } form {max-width: 80%; margin: auto auto;}</style>
+<form [formGroup]="formularioDeClientes" (ngSubmit)="EnviarDatos()">
+    <div class="form-group">
+    <label for="nombre" style="font-weight: 400;">Nombre completo cliente</label>
+      <input type="text" formControlName="nombre" class="form-control" id="nombre" placeholder="Ingresa los datos correspondientes"><br>
+    <label for="direccion" style="font-weight: 400;">Direccion</label>
+      <input type="text" formControlName="direccion" class="form-control" id="direccion" placeholder="Ingresa los datos correspondientes"><br>
+    <label for="numero" style="font-weight: 400;">Numero</label>
+      <input type="text" formControlName="numero" class="form-control" id="numero" placeholder="Ingresa los datos correspondientes"><br>
+    <label for="municipio" style="font-weight: 400;">Municipio</label>
+      <input type="text" formControlName="municipio" class="form-control" id="municipio" placeholder="Ingresa los datos correspondientes"><br>
+    <label for="costoTotal" style="font-weight: 400;">Precio neto</label>
+      <input type="text" formControlName="costoTotal" class="form-control" id="costoTotal" placeholder="Ingresa los datos correspondientes"><br>
+      <label for="numeroaportaciones" style="font-weight: 400;">Numero de aportaciones</label>
+      <input type="text" formControlName="numeroaportaciones" class="form-control" id="numeroaportaciones" placeholder="Ingresa los datos correspondientes"><br>
+    <label for="clientejob" style="font-weight: 400;">Trabajo del Cliente</label>
+      <input type="text" formControlName="clientejob" class="form-control" id="clientejob" placeholder="Ingresa los datos correspondientes"><br>
+    <label for="nombreesposo" style="font-weight: 400;">Nombre del esposo</label>
+      <input type="text" formControlName="nombreesposo" class="form-control" id="nombreesposo" placeholder="Ingresa los datos correspondientes"><br>
+    <label for="esposojob" style="font-weight: 400;">Trabajo del esposo</label>
+      <input type="text" formControlName="esposojob" class="form-control" id="esposojob" placeholder="Ingresa los datos correspondientes"><br>
+    <label for="esposonro" style="font-weight: 400;">Numero telefonico del esposo</label>
+      <input type="text" formControlName="esposonro" class="form-control" id="esposonro" placeholder="Ingresa los datos correspondientes"><br>
+      <label for="nionmb" style="font-weight: 400;">Nombre del hijo</label>
+      <input type="text" formControlName="nionmb" class="form-control" id="nionmb" placeholder="Ingresa los datos correspondientes"><br>
+    <label for="niogg" style="font-weight: 400;">Grado y grupo</label>
+      <input type="text" formControlName="niogg" class="form-control" id="niogg" placeholder="Ingresa los datos correspondientes"><br>
+    <label for="escuelanio" style="font-weight: 400;">Escuela del nio</label>
+      <input type="text" formControlName="escuelanio" class="form-control" id="escuelanio" placeholder="Ingresa los datos correspondientes"><br>
+    <label for="rf1nmb" style="font-weight: 400;">Nombre referencia 1</label>
+      <input type="text" formControlName="rf1nmb" class="form-control" id="rf1nmb" placeholder="Ingresa los datos correspondientes"><br>
+    <label for="rf1direcc" style="font-weight: 400;">Direccion referencia 1</label>
+      <input type="text" formControlName="rf1direcc" class="form-control" id="rf1direcc" placeholder="Ingresa los datos correspondientes"><br>
+      <label for="rf1nro" style="font-weight: 400;">Numero referencia 1</label>
+      <input type="text" formControlName="rf1nro" class="form-control" id="rf1nro" placeholder="Ingresa los datos correspondientes"><br>
+    <label for="rf1parent" style="font-weight: 400;">Parentesco referencia 1</label>
+      <input type="text" formControlName="rf1parent" class="form-control" id="rf1parent" placeholder="Ingresa los datos correspondientes"><br>
+    <label for="rf2nmb" style="font-weight: 400;">Nombre referencia 2</label>
+      <input type="text" formControlName="rf2nmb" class="form-control" id="rf2nmb" placeholder="Ingresa los datos correspondientes"><br>
+    <label for="rf2direcc" style="font-weight: 400;">Direccion referencia 2</label>
+      <input type="text" formControlName="rf2direcc" class="form-control" id="rf2direcc" placeholder="Ingresa los datos correspondientes"><br>
+    <label for="rf2nro" style="font-weight: 400;">Numero referencia 2</label>
+      <input type="text" formControlName="rf2nro" class="form-control" id="rf2nro" placeholder="Ingresa los datos correspondientes"><br>
+      <label for="rf2parent" style="font-weight: 400;">Parentesco referencia 2</label>
+      <input type="text" formControlName="rf2parent" class="form-control" id="rf2parent" placeholder="Ingresa los datos correspondientes"><br>
+    <label for="rf3nmb" style="font-weight: 400;">Nombre referencia 3</label>
+      <input type="text" formControlName="rf3nmb" class="form-control" id="rf3nmb" placeholder="Ingresa los datos correspondientes"><br>
+    <label for="rf3direcc" style="font-weight: 400;">Direccion referencia 3</label>
+      <input type="text" formControlName="rf3direcc" class="form-control" id="rf3direcc" placeholder="Ingresa los datos correspondientes"><br>
+    <label for="rf3nro" style="font-weight: 400;">Numero referencia 3</label>
+      <input type="text" formControlName="rf3nro" class="form-control" id="rf3nro" placeholder="Ingresa los datos correspondientes"><br>
+    <label for="rf3parent" style="font-weight: 400;">Parentesco referencia 3</label>
+      <input type="text" formControlName="rf3parent" class="form-control" id="rf3parent" placeholder="Ingresa los datos correspondientes"><br>
+    </div><br>
+    <button class="Todoalaizquierda btn btn btn-info" type="submit">Actualizar</button>
+</form>
